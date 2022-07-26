@@ -1,13 +1,6 @@
-<p align="center"><img src="/docs-v2/static/logo.png"></p>
+<p align="center"><img src="/public/logo.png"></p>
 
-<p align="center">
-    <a href="https://github.com/BinarCode/laravel-restify/actions"><img src="https://github.com/BinarCode/laravel-restify/workflows/tests/badge.svg" alt="Build Status"></a>
-    <a href="https://packagist.org/packages/binaryk/laravel-restify"><img src="https://poser.pugx.org/binaryk/laravel-restify/d/total.svg" alt="Total Downloads"></a>
-    <a href="https://packagist.org/packages/binaryk/laravel-restify"><img src="https://poser.pugx.org/binaryk/laravel-restify/v/stable.svg" alt="Latest Stable Version"></a>
-    <a href="https://packagist.org/packages/binaryk/laravel-restify"><img src="https://poser.pugx.org/binaryk/laravel-restify/license.svg" alt="License"></a>
-</p>
-
-This is a demo project that mimic the [inertia CRM example](https://demo.inertiajs.com/) in Restify.
+This is a demo project that mimic the [inertia CRM example](https://demo.inertiajs.com/) in [Restify](https://github.com/BinarCode/laravel-restify).
 
 ## Installation
 
@@ -30,13 +23,13 @@ php artisan migrate --seed
 Now you should be able to load the list of organizations: 
 
 ```http request
-GET: http://restify-demo.test/api/restify/organizations
+GET http://restify-demo.test/api/restify/organizations
 ```
 
 And contacts:
 
 ```http request
-GET: http://restify-demo.test/api/restify/contacts
+GET http://restify-demo.test/api/restify/contacts
 ```
 
 ## Authenticate
@@ -53,13 +46,13 @@ The seeded user has the email and password:
 So you can login with this account in postman: 
 
 ```http request
-POST: http://restify-demo.test/api/restify/login
+POST http://restify-demo.test/api/restify/login
 ```
 
 Now uncomment the config `retify.middleware` of `auth:sanctum` so you can use the authorization token to perform the profile request:
 
 ```http request
-GET: http://restify-demo.test/api/restify/profile
+GET http://restify-demo.test/api/restify/profile
 ```
 
 ## Learn more
