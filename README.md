@@ -2,11 +2,26 @@
 
 This is a demo project that mimic the [inertia CRM example](https://demo.inertiajs.com/) in [Restify](https://github.com/BinarCode/laravel-restify).
 
+## Prerequisites
+
+This installation assume you already have: 
+
+- PHP8.0+
+- [Laravel Valet] (https://laravel.com/docs/master/valet#introduction) - or a similar solution so you can run requests
+
+
 ## Installation
 
 You can install the package via composer:
 
-Clone the project into a folder. For simplicity name your folder as `retify-demo` (the postman collection uses this as a host).
+Clone the project into a valet folder. For simplicity name your folder as `retify-demo` (the postman collection uses this as a host).
+
+Clone the repo:
+
+```sh
+git clone https://github.com/BinarCode/restify-demo.git
+cd restify-demo
+```
 
 Install dependencies: 
 
@@ -30,6 +45,12 @@ And contacts:
 
 ```http request
 GET http://restify-demo.test/api/restify/contacts
+```
+
+Paginated contacts with organization:
+
+```http request
+GET http://restify-demo.test/api/restify/contacts?include=organization&page=2&perPage=5
 ```
 
 ## Authenticate
