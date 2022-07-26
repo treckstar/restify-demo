@@ -55,6 +55,10 @@ Now uncomment the config `retify.middleware` of `auth:sanctum` so you can use th
 GET http://restify-demo.test/api/restify/profile
 ```
 
+## Postman 
+
+Download the [Postman collection here](/public/Restify_Demo.postman_collection.json). And configure the `{{host}}` to `http://restify-demo.test` into the collection.
+
 ## Learn more
 
 Here is a quick video of how I started this repo [loom video](https://www.loom.com/share/efeef8bf88ac4247850d6c68ca4253b5).
