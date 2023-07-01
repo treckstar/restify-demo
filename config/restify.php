@@ -96,7 +96,7 @@ return [
     'middleware' => [
         'api',
         // TODO: Uncomment this to get started with authenticated
-        // 'auth:sanctum',
+        'auth:sanctum',
         DispatchRestifyStartingEvent::class,
         AuthorizeRestify::class,
     ],
